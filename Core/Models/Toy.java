@@ -1,6 +1,6 @@
 package Core.Models;
 
-public class Toy {
+public class Toy implements Comparable<Toy> {
     public int id;
     public String name;
     public int weight;
@@ -27,5 +27,20 @@ public class Toy {
     @Override
     public String toString(){
         return "ID игрушки: " + id + "; Название: " + name + "; Вес: " + weight;
+    }
+
+    public void setName(String name2) {
+    }
+
+    @Override
+    public int compareTo(Toy o) {
+        return o.getWeight() - this.getWeight();
+    }
+
+    public void setWeight(int weight2) {
+    }
+
+    public int getId() {
+        return 0;
     }
 }
