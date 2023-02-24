@@ -51,7 +51,7 @@ public class Model {
     }
 
 
-    public Drawing currentDrawingService() {
+    public Drawing DrawingService() {
         return this.DrawingService;
     }
 

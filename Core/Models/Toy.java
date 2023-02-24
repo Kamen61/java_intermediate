@@ -15,11 +15,6 @@ public class Toy implements Comparable<Toy> {
         return this.name;
     }
 
-
-    public int getid(){
-        return this.id;
-    }
-
     public int getWeight(){
         return this.weight;
     }
@@ -41,6 +36,6 @@ public class Toy implements Comparable<Toy> {
     }
 
     public int getId() {
-        return 0;
+        return id;
     }
 }
